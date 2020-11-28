@@ -1,6 +1,9 @@
+/* Importing all related sass files */
 @import 'config';
 @import 'menu';
 @import 'container';
+
+/* Styling starts here */
 
 * {
   box-sizing: border-box;
@@ -48,6 +51,7 @@ header {
   color: $secondary-color;
 }
 
+/* Styles for main divs start here */
 main {
   padding: 4rem;
   //height: 100%;
@@ -74,6 +78,7 @@ main {
   }
 }
 
+/** styling for about.html page */
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -81,14 +86,12 @@ main {
     'bioimage bio bio'
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
-
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
-
   .bio {
     grid-area: bio;
     h3 {
@@ -101,10 +104,13 @@ main {
 }
 
 .experiences {
-  margin: 20px 0;
+  margin-top: 40px;
+  .sm-heading {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
   h3 {
-    padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -198,7 +204,7 @@ main {
 
 .website-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.5rem;
   grid-template-areas: 'img-1 img-2 img-3';
@@ -225,7 +231,7 @@ main {
       transition: opacity 0.5s;
     }
     i {
-      color: rgba(255, 255, 255, 0.6);
+      color: $secondary-color;
       font-size: 3rem;
       position: relative;
       z-index: 100;
@@ -294,7 +300,7 @@ main {
       transition: opacity 0.5s;
     }
     i {
-      color: rgba(255, 255, 255, 0.6);
+      color: $secondary-color;
       font-size: 3rem;
       position: relative;
       z-index: 100;
@@ -326,7 +332,7 @@ main {
 
 .logos-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.5rem;
   grid-template-areas: 'img-7 img-8 img-9';
@@ -353,7 +359,7 @@ main {
       transition: opacity 0.5s;
     }
     i {
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba($secondary-color, 30%);
       font-size: 3rem;
       position: relative;
       z-index: 100;

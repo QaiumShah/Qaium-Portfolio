@@ -1,3 +1,4 @@
+/* Importing all related sass files */
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -187,6 +188,7 @@
       color: #fff;
       padding: 20px 40px; }
 
+/* Styling starts here */
 * {
   box-sizing: border-box; }
 
@@ -225,6 +227,7 @@ header {
 .text-secondary {
   color: #eece1a; }
 
+/* Styles for main divs start here */
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -241,6 +244,7 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+/** styling for about.html page */
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -259,10 +263,12 @@ main {
       font-size: 1.5rem; }
 
 .experiences {
-  margin: 20px 0; }
+  margin-top: 40px; }
+  .experiences .sm-heading {
+    margin-bottom: 20px;
+    font-size: 2rem; }
   .experiences h3 {
-    padding: 20px 0;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
 
 .work-experience {
   display: grid;
@@ -326,7 +332,7 @@ main {
 
 .website-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.5rem;
   grid-template-areas: 'img-1 img-2 img-3'; }
@@ -352,7 +358,7 @@ main {
       opacity: 0;
       transition: opacity 0.5s; }
     .website-gallery a i {
-      color: rgba(255, 255, 255, 0.6);
+      color: #eece1a;
       font-size: 3rem;
       position: relative;
       z-index: 100;
@@ -411,7 +417,7 @@ main {
       opacity: 0;
       transition: opacity 0.5s; }
     .posters-gallery a i {
-      color: rgba(255, 255, 255, 0.6);
+      color: #eece1a;
       font-size: 3rem;
       position: relative;
       z-index: 100;
@@ -434,7 +440,7 @@ main {
 
 .logos-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 0.5rem;
   grid-template-areas: 'img-7 img-8 img-9'; }
@@ -460,7 +466,7 @@ main {
       opacity: 0;
       transition: opacity 0.5s; }
     .logos-gallery a i {
-      color: rgba(255, 255, 255, 0.6);
+      color: #eece1a;
       font-size: 3rem;
       position: relative;
       z-index: 100;
@@ -587,8 +593,25 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+    .about-info .bio-image {
+      margin-top: 2rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; }
+  .work-experience {
+    grid-template-areas: 'job1' 'job2' 'job3' 'job4' 'job5' 'job6';
+    grid-template-columns: 1fr; }
+  .education {
+    grid-template-areas: 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .website-gallery {
+    grid-template-areas: 'img-1' 'img-2' 'img-3';
+    grid-template-columns: 1fr; }
+  .posters-gallery {
+    grid-template-areas: 'img-4' 'img-5' 'img-6';
+    grid-template-columns: 1fr; }
+  .logos-gallery {
+    grid-template-areas: 'img-7' 'img-8' 'img-9';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

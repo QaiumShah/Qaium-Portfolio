@@ -1,5 +1,5 @@
 # Qaium-Portfolio
 
-This is the preview folder used in the seperate branch 'hosting-pg'. 
+This portfolio website was made under pure SASS with html and javascript. TThe preview folder named 'dist' is used in the seperate branch 'hosting-pg' to view the page in Github pages. 
 
-Click the link to preview the page: https://qaiumshah.github.io/Qaium-Portfolio/
+Please follow the link to view the my portfolio page: https://qaiumshah.github.io/Qaium-Portfolio/

@@ -446,7 +446,6 @@ main {
   grid-template-areas: 'img-7 img-8 img-9'; }
   .logos-gallery a {
     width: 100%;
-    height: 15rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -558,11 +557,19 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .logos-gallery a.img-7,
+  .logos-gallery a.img-8,
+  .logos-gallery a.img-9 {
+    height: 15rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .logos-gallery a.img-7,
+  .logos-gallery a.img-8,
+  .logos-gallery a.img-9 {
+    height: 13rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -607,12 +614,20 @@ main {
   .website-gallery {
     grid-template-areas: 'img-1' 'img-2' 'img-3';
     grid-template-columns: 1fr; }
+    .website-gallery a.img-1,
+    .website-gallery a.img-2,
+    .website-gallery a.img-3 {
+      min-height: 25rem; }
   .posters-gallery {
     grid-template-areas: 'img-4' 'img-5' 'img-6';
     grid-template-columns: 1fr; }
   .logos-gallery {
     grid-template-areas: 'img-7' 'img-8' 'img-9';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .logos-gallery a.img-7,
+    .logos-gallery a.img-8,
+    .logos-gallery a.img-9 {
+      height: 9rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
